@@ -1,0 +1,43 @@
+.main_chat
+  .groupinfo
+    .guroupinfo__infobox
+      .groupinfo__infobox__group
+        masami_group
+      .groupinfo__infobox__menber
+        Member : masa
+    .groupinfo__edit_btn
+      = link_to "https://#.com" do
+        Edit
+  .messagelist
+    .messagelist__name_message
+      .messagelist__name_message__namebox
+        .messagelist__name_message__namebox__name
+          masa
+        .messagelist__name_message__namebox__time
+          2020/5/11(mon) 10:00
+      .messagelist__name_message__message
+        今日もフロント実装中
+    .messagelist__name_message
+      .messagelist__name_message__namebox
+        .messagelist__name_message__namebox__name
+          masa
+        .messagelist__name_message__namebox__time
+          2020/5/10(son) 22:00
+      .nmessagelist__name_message__message
+        あと少し
+    .messagelist__name_message
+      .messagelist__name_message__namebox
+        .messagelist__name_message__namebox__name
+        .messagelist__name_message__namebox__time
+      .nmessagelist__name_message__message
+      
+
+  .messageform
+    .messageform__new_message
+      .messageform__new_message__input
+      %label{class: "messageform__new_message__picture_btn"}
+        = icon('far', 'image',class: "icon")
+        %input{class: 'none',type: "file"}
+    .messageform__send_btn
+      = link_to "https://#.com" ,class: "a" do
+        Send
