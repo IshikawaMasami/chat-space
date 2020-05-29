@@ -2,13 +2,13 @@
   .username
     .username__namebox
       .username__namebox__name
-        masa
+        = current_user.name
       .username__namebox__icons
         .username__namebox__icons__icon_1
         = link_to "https://#.com" do
           = icon('fas', 'edit', class: "icon_1")
         .username__namebox__icons__icon_2
-        = link_to "https://#.com" do
+        = link_to edit_user_path(current_user) do
           = icon('fas', 'cog', class: "icon_2")
 
   .grouplist
