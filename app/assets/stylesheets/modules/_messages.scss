@@ -62,7 +62,7 @@
             font-size: 15px;
             color: $side_white;
          }
-         &__firstmessage{
+         &__lastmessage{
             height: 11px;
             width: 260px;
             margin-left: 20px;
@@ -90,7 +90,7 @@
       &__infobox{
          height: 65px;
          width: 300px;
-      
+
         &__group{
            color: #333333;
            font-size: 20px;
@@ -101,7 +101,11 @@
            color: #999999;
            font-size: 12px;
            bottom: 0;
+           list-style: none;
+           display: flex;
+           justify-content: space-around;
         }
+    
       }
       &__edit_btn{
          height: 40px;
@@ -125,31 +129,31 @@
       width: 100%;
       padding-top: 40px;
     
-      &__name_message{
+      .message{
          height: 42px;
          width: 350px;
          margin-bottom: 46px;
          margin-left: 40px;
       
-        &__namebox{
+        .upper-message{
            height: 24px;
            width: 350px;
            display: flex;
            margin-bottom: 12px;
         
-           &__name{
+           &__user-name{
               line-height: 24px;
               font-size: 16px;
               font-weight: bold;
               color: #333333;
               margin-right: 12px;
            }
-           &__time{
+           &__date{
               font-size: 12px;
               color: #999999;
            }
          }
-        &__message{
+        .lower-message{
            font-size: 14px;
            color: #434A54;
         }
@@ -162,26 +166,27 @@
       display: flex;
       padding-top: 20px;
     
-      &__new_message{
-        background-color: $main_white;
+      .new_message{
         height: 50px;
-        width: calc(100% - 195px);
+        width: calc(100% - 80px);
         margin-left: 40px;
         display: flex;
         position: relative;
       
-        &__input{
+        .messageform__new__message{
+          background-color: $main_white;
           height: 50px;
           width: calc(100% - 40px);
           line-height: 50px;
           color: #999999;
           padding-left: 10px;
+          border-width: 0px;
         }
         
-        &__picture_btn{
+        .messageform__new_message__picture_btn{
           position: absolute;
           top: 12px;
-          right: 15px;                  
+          right: 120px;                  
           .icon{
             color: #253141;
             font-size: 26px;
@@ -191,12 +196,14 @@
           }
         }
       }
-      &__send_btn{
+      .messageform__send_btn{
         background-color: #38aef0;
+        color: $main_white;
         height: 50px;
         width: 100px;
         margin-left: 15px;
         position: relative;
+        border-width: 0px;
         .a{
           color: $main_white;
           font-size: 18px;    
