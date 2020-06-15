@@ -128,9 +128,9 @@
       height: calc(100vh - 190px);
       width: 100%;
       padding-top: 40px;
+      overflow: scroll;
     
       .message{
-         height: 42px;
          width: 350px;
          margin-bottom: 46px;
          margin-left: 40px;
