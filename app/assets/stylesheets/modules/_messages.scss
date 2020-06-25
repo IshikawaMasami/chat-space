@@ -17,6 +17,8 @@
     .username{
       height: 100px;
       width: 100%;
+      align-items: center;
+      position: relative;
       &__namebox{
          background-color: $side_color;
          height: 20px;
@@ -26,7 +28,6 @@
          left: 20px;
          display: flex;
          justify-content: space-between;
-         align-items: center;
       
          &__name{
             font-size: 14px;
@@ -52,7 +53,11 @@
       &__groupbox{
          height: 91px;
          width: 100%;
-         padding-top: 20px; 
+         padding-top: 20px;
+         
+        a{
+          text-decoration: none;
+        }
         
          &__groupname{
             height: 15px;
@@ -61,6 +66,7 @@
             margin-left: 20px;
             font-size: 15px;
             color: $side_white;
+            text-decoration: none;
          }
          &__lastmessage{
             height: 11px;
@@ -68,6 +74,7 @@
             margin-left: 20px;
             font-size: 11px;
             color: $side_white;
+            text-decoration: none;
          }
       }
     }

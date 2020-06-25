@@ -6,7 +6,7 @@
       .groupinfo__infobox__menber
         Member:
         - @group.users.each do|users|
-          %li= users.name 
+          = users.name 
     .groupinfo__edit_btn
       = link_to edit_group_path(@group) do
         Edit
